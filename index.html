@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/logo.svg">
+  <!--- style --->
+  <link rel="stylesheet" href="css/style.css">
+  <!--- bootstrap --->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!--- box icons --->
+  <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+  <title>Landing Page</title>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <!-- Brand -->
+        <a class="navbar-brand mt-2" href="index.html"><img src="images/logo.svg" class="logo" alt="..."></a>
+        <!-- Toggler/collapsibe Button -->
+        <div class="menu-icon" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+          aria-controls="offcanvasRight">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse justify-content-between" id="collapsibleNavbar">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="">Features</a>
+              <img class="arrow-down-icon" src="images/icon-arrow-down.svg" alt="">
+              <div class="drop-menu">
+                <a href=""><img src="images/icon-todo.svg" alt="">Todo List</a>
+                <a href=""><img src="images/icon-calendar.svg" alt="">Calender</a>
+                <a href=""><img src="images/icon-reminders.svg" alt="">Reminders</a>
+                <a href=""><img src="images/icon-planning.svg" alt="">Planning</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="">Company </a>
+              <img class="arrow-down-icon" src="images/icon-arrow-down.svg" alt="">
+              <div class="drop-menu">
+                <a href="">History</a>
+                <a href="">Blog</a>
+                <a href="">Planning</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="">Careers</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="">About</a>
+            </li>
+          </ul>
+          <div>
+            <a href="">Login</a>
+            <a href="" class="btn ms-4">Register</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Start Mobile Menu sidebar -->
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+    <div class="offcanvas-header">
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Features
+            <img class="arrow-down-icon" src="images/icon-arrow-down.svg" alt="">
+          </a>
+          <div class="drop-menu">
+            <a href=""><img src="images/icon-todo.svg" alt="">Todo List</a>
+            <a href=""><img src="images/icon-calendar.svg" alt="">Calender</a>
+            <a href=""><img src="images/icon-reminders.svg" alt="">Reminders</a>
+            <a href=""><img src="images/icon-planning.svg" alt="">Planning</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Company
+            <img class="arrow-down-icon" src="images/icon-arrow-down.svg" alt="">
+          </a>
+          <div class="drop-menu">
+            <a href="">History</a>
+            <a href="">Blog</a>
+            <a href="">Planning</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="">Careers</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link  mt-2" href="">About</a>
+        </li>
+        <div class="mt-3 d-flex flex-column align-items-center">
+          <a href="" class="mb-2">Login</a>
+          <a href="" class="btn"><span>Register</span></a>
+        </div>
+      </ul>
+    </div>
+  </div>
+  <!-- End Mobile Menu sidebar -->
+
+  <main>
+    <!-- Start Hero Section -->
+    <section class="home">
+      <div class="container">
+        <div class="row">
+          <div class="hero-text col-lg-6">
+            <h1 class="mt-4 mb-4">Make <span>remote work</span></h1>
+            <p class="mb-5">Get Your team in sync, no matter your location.
+              Streamline processes, create team rituals,and
+              watch productivity soar.
+            </p>
+            <div class="btn-cont">
+              <a href="" class="btn mb-5"><span>Learn more</span></a>
+            </div>
+            <div class="clients-images d-flex mt-5">
+              <img src="images/client-databiz.svg" alt="">
+              <img src="images/client-audiophile.svg" alt="">
+              <img src="images/client-meet.svg" alt="">
+              <img src="images/client-maker.svg" alt="">
+            </div>
+            <div class="balls">
+              <span class="ball"></span>
+              <span class="ball"></span>
+              <span class="ball"></span>
+              <span class="ball"></span>
+            </div>
+          </div>
+          <div class="hero-img-cont col-lg-6">
+            <div class="hero-img">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Hero Section -->
+  </main>
+
+  <script src="js/bootstrap.min.js"></script>
+  <script src="https://unpkg.com/boxicons@2.1.2/dist/boxicons.js"></script>
+</body>
+
+</html>
