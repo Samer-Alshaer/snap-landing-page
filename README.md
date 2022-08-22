@@ -1,2 +1,2 @@
 # snap-landing-page
-snap landing page frontend
+snap landing-page frontend
